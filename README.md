@@ -1,959 +1,382 @@
-# 🎓 Advanced Digital Attendance Management System
+# 🎓 Digital Attendance Management System
 
-<div align="center">
+[![PHP](https://img.shields.io/badge/PHP-7.4+-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
+[![MySQL](https://img.shields.io/badge/MySQL-5.7+-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-![Attendance System Banner](https://via.placeholder.com/800x200/1e40af/ffffff?text=Digital+Attendance+Management+System)
+A comprehensive web-based attendance management system designed specifically for diploma colleges, built with modern web technologies to digitize and streamline attendance tracking processes.
 
-[![Version](https://img.shields.io/badge/Version-2.0.0-brightgreen?style=for-the-badge)](https://github.com/shahdhairyah/Attendance-system)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
-[![PHP](https://img.shields.io/badge/PHP-8.0+-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
-[![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://mysql.com)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://javascript.com)
+## 🚀 Live Demo
 
-[![Stars](https://img.shields.io/github/stars/shahdhairyah/Attendance-system?style=social)](https://github.com/shahdhairyah/Attendance-system/stargazers)
-[![Forks](https://img.shields.io/github/forks/shahdhairyah/Attendance-system?style=social)](https://github.com/shahdhairyah/Attendance-system/network)
-[![Issues](https://img.shields.io/github/issues/shahdhairyah/Attendance-system?style=social)](https://github.com/shahdhairyah/Attendance-system/issues)
-
-**🚀 A comprehensive, modern attendance management solution for educational institutions**
-
-[🌟 Live Demo](#-demo-credentials) • [📚 Quick Start](#-quick-installation) • [🛠️ Documentation](#-project-structure) • [🤝 Contributing](#-contributing)
-
----
-
-### 🏆 Trusted by 500+ Institutions | ⚡ 99.9% Uptime | 📊 Enterprise-Grade Security
-
-</div>
+- **Faculty Demo**: [sarah.johnson@college.edu](mailto:sarah.johnson@college.edu) | Password: `password`
+- **Student Demo**: [john.smith@student.edu](mailto:john.smith@student.edu) | Password: `password`
 
 ## 📋 Table of Contents
 
-1. [🌟 Overview](#-overview)
-2. [🎯 Key Features](#-key-features)
-3. [🏗️ System Architecture](#️-system-architecture)
-4. [🛠️ Technology Stack](#️-technology-stack)
-5. [🗄️ Database Design](#️-database-design)
-6. [🚀 Installation Guide](#-installation-guide)
-7. [⚙️ Configuration](#️-configuration)
-8. [🔐 Security Features](#-security-features)
-9. [📊 API Documentation](#-api-documentation)
-10. [🎨 UI/UX Design](#-uiux-design)
-11. [📈 Performance Metrics](#-performance-metrics)
-12. [🧪 Testing](#-testing)
-13. [🚧 Roadmap](#-roadmap)
-14. [🤝 Contributing](#-contributing)
-15. [📞 Support](#-support)
+- [Problem Statement](#-problem-statement)
+- [Solution Overview](#-solution-overview)
+- [Key Features](#-key-features)
+- [Technology Stack](#-technology-stack)
+- [User Flow Diagrams](#-user-flow-diagrams)
+- [Database Schema](#-database-schema)
+- [Installation Guide](#-installation-guide)
+- [Project Structure](#-project-structure)
+- [Usage Examples](#-usage-examples)
+- [Security Features](#-security-features)
+- [Future Enhancements](#-future-enhancements)
+- [Contributing](#-contributing)
+- [License](#-license)
 
----
+## 🎯 Problem Statement
 
-## 🌟 Overview
+Many diploma colleges still rely on traditional pen-paper attendance systems, which leads to:
 
-### 🎯 Mission Statement
-The **Advanced Digital Attendance Management System** is a next-generation web application designed to revolutionize how educational institutions manage student attendance. Built with modern web technologies, enterprise-grade security, and user-centric design principles.
+- **Data Loss**: Physical records can be lost or damaged
+- **Manual Errors**: Human mistakes in calculation and recording
+- **Limited Access**: No real-time access for students and parents
+- **Time Consumption**: Lengthy administrative processes
+- **Lack of Analytics**: Difficulty in generating reports and insights
 
-### 🏆 Key Achievements
-- 🎖️ **500+ Active Institutions** worldwide
-- 📈 **99.7% Accuracy Rate** in attendance tracking
-- ⚡ **2.3s Average Load Time** for optimal performance
-- 🔒 **Zero Security Incidents** in production
-- 🌍 **15+ Countries** deployment footprint
-- 💚 **65% Time Savings** in administrative tasks
+## 💡 Solution Overview
 
-### 📊 Impact Statistics
-- **85% Reduction** in manual errors
-- **75% Faster** report generation
-- **100% Real-time** data availability
-- **90% User Satisfaction** rating
-- **Zero Paper Usage** - Complete digital transformation
+Our Digital Attendance System provides a modern, web-based solution that enables:
 
----
+- ✅ **Real-time Attendance Tracking**: Instant updates and calculations
+- ✅ **Multi-role Access**: Different interfaces for faculty, students, and administrators
+- ✅ **Automated Notifications**: Alerts for low attendance
+- ✅ **Comprehensive Analytics**: Visual reports and statistics
+- ✅ **Secure Authentication**: Role-based access control
+- ✅ **Mobile Responsive**: Works on all devices
 
-## 🎯 Key Features
+## 🌟 Key Features
 
-### 👨‍🏫 Faculty Portal
-- **🔐 Secure Authentication** - Multi-factor authentication support
-- **📊 Real-time Dashboard** - Live attendance statistics and analytics
-- **✅ Smart Attendance Marking** - Bulk operations and pattern recognition
-- **📈 Advanced Analytics** - Trend analysis and predictive insights
-- **📋 Subject Management** - Comprehensive subject and student management
-- **📅 Calendar Integration** - Sync with Google Calendar and Outlook
-- **📊 Custom Reports** - 25+ pre-built report templates
-- **🔔 Automated Alerts** - Smart notification system
+### For Faculty
+- **Secure Login System**: Email/password authentication
+- **Subject Management**: View assigned subjects and student lists
+- **Attendance Marking**: Easy-to-use interface for marking present/absent
+- **Real-time Statistics**: View attendance overview for all subjects
+- **Date-wise Records**: Access historical attendance data
 
-### 👨‍🎓 Student Experience
-- **📱 Mobile-First Design** - Progressive Web App experience
-- **📊 Personal Analytics** - Detailed attendance insights
-- **🎯 Goal Setting** - Personal attendance targets
-- **🔔 Smart Notifications** - Multi-channel alert system
-- **📈 Progress Tracking** - Visual progress indicators
-- **🏆 Achievement System** - Gamification elements
-- **👥 Peer Comparison** - Anonymous benchmarking
-- **📱 Offline Support** - View data without internet
+### For Students
+- **Student Portal**: Login with student credentials
+- **Attendance Dashboard**: View attendance percentage per subject
+- **Visual Analytics**: Progress bars and charts for better understanding
+- **Low Attendance Alerts**: Automatic warnings when attendance drops below 75%
+- **Recent History**: Track recent attendance records
 
-### 👨‍💼 Administrative Console
-- **🏢 Multi-Campus Support** - Centralized management
-- **👥 User Management** - Role-based access control
-- **📊 Executive Dashboards** - High-level institutional metrics
-- **📋 Compliance Reports** - Automated regulatory reporting
-- **🔧 System Configuration** - Customizable business rules
-- **🛡️ Security Center** - Advanced threat protection
-- **📈 Performance Monitoring** - Real-time system health
-- **🔄 Automated Backups** - Data protection and recovery
+### For Admin/HOD
+- **Department Overview**: Complete attendance statistics
+- **Faculty Management**: Monitor faculty attendance marking
+- **Student Reports**: Generate comprehensive attendance reports
+- **System Analytics**: Overall system usage and performance metrics
+- **Data Export**: Export reports in various formats
 
----
+### UI/UX Features
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
+- **Modern UI**: Clean, professional interface with Bootstrap 5
+- **Interactive Elements**: Smooth animations and hover effects
+- **Role-based Navigation**: Different interfaces for each user type
+- **Real-time Updates**: Dynamic content loading without page refresh
 
-## 🏗️ System Architecture
+## 🛠 Technology Stack
 
-### 🌐 High-Level Architecture Diagram
+| Layer | Technology |
+|-------|------------|
+| **Frontend** | HTML5, CSS3, Bootstrap 5, JavaScript |
+| **Backend** | PHP 7.4+ |
+| **Database** | MySQL 5.7+ |
+| **Icons** | Font Awesome 6 |
+| **Styling** | Custom CSS with Bootstrap Components |
 
-```mermaid
-graph TB
-    subgraph "Client Layer"
-        A[Web Browser]
-        B[Mobile App]
-        C[Desktop App]
-    end
-    
-    subgraph "Load Balancer"
-        D[Nginx Load Balancer]
-    end
-    
-    subgraph "Application Layer"
-        E[Web Server 1]
-        F[Web Server 2]
-        G[Web Server 3]
-    end
-    
-    subgraph "Business Logic"
-        H[Authentication Service]
-        I[Attendance Service]
-        J[Notification Service]
-        K[Reporting Service]
-    end
-    
-    subgraph "Data Layer"
-        L[MySQL Primary]
-        M[MySQL Replica]
-        N[Redis Cache]
-        O[File Storage]
-    end
-    
-    subgraph "External Services"
-        P[Email Service]
-        Q[SMS Gateway]
-        R[Push Notifications]
-    end
-    
-    A --> D
-    B --> D
-    C --> D
-    D --> E
-    D --> F
-    D --> G
-    E --> H
-    F --> I
-    G --> J
-    H --> L
-    I --> L
-    J --> Q
-    K --> M
-    L --> M
-    H --> N
-    I --> N
-    J --> P
-    K --> R
-    I --> O
-```
+## 📊 User Flow Diagrams
 
-### 🔄 Data Flow Architecture
+### 1. Student User Flow
 
 ```mermaid
-sequenceDiagram
-    participant S as Student
-    participant F as Faculty
-    participant A as Application
-    participant D as Database
-    participant N as Notification
+graph TD
+    A[Student Login Page] --> B{Valid Credentials?}
+    B -->|No| C[Show Error Message]
+    C --> A
+    B -->|Yes| D[Student Dashboard]
+    D --> E[View Attendance by Subject]
+    D --> F[Check Overall Percentage]
+    D --> G[View Recent Records]
+    E --> H[Subject Details Page]
+    H --> I[Date-wise Attendance]
+    F --> J{Attendance < 75%?}
+    J -->|Yes| K[Show Warning Alert]
+    J -->|No| L[Show Normal Status]
+    G --> M[Historical Data View]
+    D --> N[Profile Settings]
+    D --> O[Logout]
     
-    F->>A: Login & Authentication
-    A->>D: Validate Credentials
-    D-->>A: User Data
-    A-->>F: Dashboard Access
-    
-    F->>A: Mark Attendance
-    A->>D: Store Attendance Data
-    D-->>A: Confirmation
-    A-->>F: Success Response
-    
-    A->>D: Check Attendance Rules
-    D-->>A: Student Attendance %
-    
-    alt Attendance < 75%
-        A->>N: Trigger Alert
-        N->>S: Send Notification
-        N->>F: Faculty Alert
-    end
-    
-    S->>A: View Attendance
-    A->>D: Fetch Student Data
-    D-->>A: Attendance Records
-    A-->>S: Dashboard Display
+    style A fill:#e1f5fe
+    style D fill:#e8f5e8
+    style K fill:#ffebee
+    style L fill:#e8f5e8
 ```
 
-### 🏭 Microservices Architecture
-
-#### Core Services
-1. **🔐 Authentication Service**
-   - JWT token management
-   - Multi-factor authentication
-   - Session management
-   - Password policies
-
-2. **📊 Attendance Service**
-   - Attendance marking logic
-   - Bulk operations
-   - Pattern recognition
-   - Data validation
-
-3. **🔔 Notification Service**
-   - Email notifications
-   - SMS alerts
-   - Push notifications
-   - Alert scheduling
-
-4. **📈 Analytics Service**
-   - Real-time statistics
-   - Trend analysis
-   - Predictive modeling
-   - Custom metrics
-
-5. **📋 Reporting Service**
-   - Report generation
-   - Data export
-   - Scheduled reports
-   - Custom templates
-
-6. **👥 User Management Service**
-   - Role management
-   - Permission control
-   - User profiles
-   - Account lifecycle
-
----
-
-## 🛠️ Technology Stack
-
-### 🎯 Frontend Technologies
-
-| Technology | Version | Purpose | Benefits |
-|------------|---------|---------|----------|
-| **HTML5** | Latest | Semantic markup | Modern web standards |
-| **CSS3/SCSS** | Latest | Advanced styling | Modular design system |
-| **Bootstrap** | 5.3.x | UI framework | Responsive design |
-| **JavaScript (ES6+)** | Latest | Interactive features | Modern JS capabilities |
-| **jQuery** | 3.7.x | DOM manipulation | Legacy compatibility |
-| **Chart.js** | 4.x | Data visualization | Interactive charts |
-| **Font Awesome** | 6.x | Icon library | 2000+ icons |
-| **DataTables** | 1.13.x | Advanced tables | Sorting, filtering, pagination |
-
-### ⚙️ Backend Technologies
-
-| Technology | Version | Purpose | Scalability |
-|------------|---------|---------|-------------|
-| **PHP** | 8.2+ | Server-side logic | High performance |
-| **MySQL** | 8.0+ | Primary database | Enterprise reliability |
-| **Redis** | 7.x | Caching layer | 5x performance boost |
-| **Nginx** | 1.24+ | Web server | 10K+ concurrent users |
-| **Apache** | 2.4+ | Alternative server | Battle-tested reliability |
-| **Composer** | 2.x | Dependency management | Package ecosystem |
-| **PHPMailer** | 6.x | Email handling | SMTP support |
-| **JWT** | Latest | Authentication | Stateless security |
-
-### 🔧 Development & Deployment
-
-| Tool | Purpose | Impact |
-|------|---------|--------|
-| **Docker** | Containerization | Consistent deployments |
-| **Git** | Version control | Collaborative development |
-| **GitHub Actions** | CI/CD pipeline | Automated deployments |
-| **PHPUnit** | Testing framework | Code quality assurance |
-| **Xdebug** | Debugging | Development efficiency |
-| **Postman** | API testing | Integration testing |
-
----
-
-## 🗄️ Database Design
-
-### 📊 Entity Relationship Diagram
+### 2. Faculty User Flow
 
 ```mermaid
-erDiagram
-    USERS {
-        bigint id PK
-        varchar username UK
-        varchar email UK
-        varchar password
-        enum user_type
-        enum status
-        timestamp created_at
-        timestamp updated_at
-    }
+graph TD
+    A[Faculty Login Page] --> B{Valid Credentials?}
+    B -->|No| C[Show Error Message]
+    C --> A
+    B -->|Yes| D[Faculty Dashboard]
+    D --> E[View Assigned Subjects]
+    D --> F[Mark Today's Attendance]
+    D --> G[View Attendance Reports]
+    E --> H[Subject Student List]
+    H --> I[Individual Student Records]
+    F --> J[Select Subject & Date]
+    J --> K[Student List with Checkboxes]
+    K --> L[Mark Present/Absent]
+    L --> M[Submit Attendance]
+    M --> N[Confirmation Message]
+    G --> O[Generate Reports]
+    O --> P[Date Range Selection]
+    P --> Q[Export Options]
+    D --> R[Profile Management]
+    D --> S[Logout]
     
-    INSTITUTIONS {
-        bigint id PK
-        varchar name
-        varchar code UK
-        enum type
-        text address
-        varchar timezone
-        json settings
-        enum status
-        timestamp created_at
-    }
-    
-    DEPARTMENTS {
-        bigint id PK
-        bigint institution_id FK
-        varchar name
-        varchar code
-        bigint head_id FK
-        enum status
-        timestamp created_at
-    }
-    
-    COURSES {
-        bigint id PK
-        bigint institution_id FK
-        bigint department_id FK
-        varchar name
-        varchar code UK
-        int duration_years
-        decimal min_attendance_pct
-        enum status
-    }
-    
-    SUBJECTS {
-        bigint id PK
-        bigint course_id FK
-        varchar name
-        varchar code UK
-        decimal credits
-        int theory_hours
-        int practical_hours
-        tinyint semester
-        enum status
-    }
-    
-    STUDENT_PROFILES {
-        bigint id PK
-        bigint user_id FK
-        bigint institution_id FK
-        bigint course_id FK
-        varchar student_id UK
-        tinyint current_semester
-        date admission_date
-        json personal_details
-        enum status
-    }
-    
-    FACULTY_PROFILES {
-        bigint id PK
-        bigint user_id FK
-        bigint institution_id FK
-        bigint department_id FK
-        varchar employee_id UK
-        varchar designation
-        varchar qualification
-        json expertise
-        enum status
-    }
-    
-    CLASSES {
-        bigint id PK
-        bigint subject_id FK
-        bigint faculty_id FK
-        varchar class_name
-        varchar section
-        tinyint semester
-        json schedule
-        int max_students
-        decimal min_attendance_pct
-        enum status
-    }
-    
-    CLASS_ENROLLMENTS {
-        bigint id PK
-        bigint class_id FK
-        bigint student_id FK
-        date enrollment_date
-        boolean is_active
-        varchar grade
-    }
-    
-    ATTENDANCE_SESSIONS {
-        bigint id PK
-        bigint class_id FK
-        date session_date
-        time session_time
-        varchar topic
-        bigint marked_by FK
-        enum session_type
-        enum status
-        int total_students
-        int present_count
-    }
-    
-    ATTENDANCE_RECORDS {
-        bigint id PK
-        bigint session_id FK
-        bigint student_id FK
-        enum status
-        time arrival_time
-        time departure_time
-        varchar remarks
-        bigint marked_by FK
-        timestamp created_at
-    }
-    
-    NOTIFICATION_TEMPLATES {
-        bigint id PK
-        varchar name UK
-        varchar subject
-        text content
-        enum type
-        json variables
-        boolean is_active
-    }
-    
-    NOTIFICATIONS {
-        bigint id PK
-        bigint user_id FK
-        bigint template_id FK
-        varchar subject
-        text content
-        enum type
-        enum status
-        timestamp sent_at
-        timestamp read_at
-    }
-    
-    SYSTEM_SETTINGS {
-        bigint id PK
-        bigint institution_id FK
-        varchar setting_key UK
-        text setting_value
-        varchar data_type
-        text description
-        timestamp updated_at
-    }
-    
-    AUDIT_LOGS {
-        bigint id PK
-        bigint user_id FK
-        varchar action
-        varchar table_name
-        json old_values
-        json new_values
-        varchar ip_address
-        varchar user_agent
-        timestamp created_at
-    }
-    
-    %% Relationships
-    USERS ||--o{ STUDENT_PROFILES : "has"
-    USERS ||--o{ FACULTY_PROFILES : "has"
-    INSTITUTIONS ||--o{ DEPARTMENTS : "contains"
-    INSTITUTIONS ||--o{ COURSES : "offers"
-    DEPARTMENTS ||--o{ COURSES : "manages"
-    COURSES ||--o{ SUBJECTS : "includes"
-    SUBJECTS ||--o{ CLASSES : "taught_in"
-    USERS ||--o{ CLASSES : "teaches"
-    CLASSES ||--o{ CLASS_ENROLLMENTS : "has"
-    USERS ||--o{ CLASS_ENROLLMENTS : "enrolled_in"
-    CLASSES ||--o{ ATTENDANCE_SESSIONS : "conducts"
-    ATTENDANCE_SESSIONS ||--o{ ATTENDANCE_RECORDS : "records"
-    USERS ||--o{ ATTENDANCE_RECORDS : "attendance_of"
-    USERS ||--o{ NOTIFICATIONS : "receives"
-    NOTIFICATION_TEMPLATES ||--o{ NOTIFICATIONS : "generates"
-    INSTITUTIONS ||--o{ SYSTEM_SETTINGS : "configures"
-    USERS ||--o{ AUDIT_LOGS : "performs"
+    style A fill:#e1f5fe
+    style D fill:#e8f5e8
+    style N fill:#e8f5e8
+    style Q fill:#fff3e0
 ```
 
-### 🗃️ Core Database Tables
+### 3. Admin/HOD User Flow
 
-#### Users Table (Polymorphic Design)
-```sql
-CREATE TABLE users (
-    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    uuid CHAR(36) NOT NULL UNIQUE,
-    username VARCHAR(50) NOT NULL UNIQUE,
-    email VARCHAR(255) NOT NULL UNIQUE,
-    email_verified_at TIMESTAMP NULL,
-    password VARCHAR(255) NOT NULL,
-    user_type ENUM('admin', 'faculty', 'student') NOT NULL,
-    status ENUM('active', 'inactive', 'suspended') DEFAULT 'active',
-    last_login_at TIMESTAMP NULL,
-    last_login_ip VARCHAR(45) NULL,
-    two_factor_enabled BOOLEAN DEFAULT FALSE,
-    remember_token VARCHAR(100) NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+```mermaid
+graph TD
+    A[Admin Login Page] --> B{Valid Credentials?}
+    B -->|No| C[Show Error Message]
+    C --> A
+    B -->|Yes| D[Admin Dashboard]
+    D --> E[Department Overview]
+    D --> F[Faculty Management]
+    D --> G[Student Management]
+    D --> H[System Reports]
+    E --> I[Overall Statistics]
+    E --> J[Subject-wise Analysis]
+    F --> K[Faculty Performance]
+    F --> L[Attendance Marking History]
+    G --> M[Student Attendance Summary]
+    G --> N[Low Attendance Alerts]
+    H --> O[Generate System Reports]
+    O --> P[Date Range & Filters]
+    P --> Q[Export Data]
+    Q --> R[PDF/Excel/CSV Options]
+    D --> S[System Settings]
+    D --> T[User Management]
+    T --> U[Add/Edit Users]
+    T --> V[Role Assignment]
+    D --> W[Logout]
     
-    INDEX idx_email (email),
-    INDEX idx_username (username),
-    INDEX idx_user_type (user_type),
-    INDEX idx_status (status)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+    style A fill:#e1f5fe
+    style D fill:#e8f5e8
+    style N fill:#ffebee
+    style Q fill:#fff3e0
 ```
 
-#### Attendance Records Table
-```sql
-CREATE TABLE attendance_records (
-    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    session_id BIGINT UNSIGNED NOT NULL,
-    student_id BIGINT UNSIGNED NOT NULL,
-    status ENUM('present', 'absent', 'late', 'excused') DEFAULT 'absent',
-    arrival_time TIME NULL,
-    departure_time TIME NULL,
-    location_lat DECIMAL(10, 8) NULL,
-    location_lng DECIMAL(11, 8) NULL,
-    device_info JSON NULL,
-    remarks TEXT NULL,
-    marked_by BIGINT UNSIGNED NOT NULL,
-    marking_method ENUM('manual', 'qr_code', 'biometric', 'auto') DEFAULT 'manual',
-    confidence_score DECIMAL(3, 2) DEFAULT 1.00,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    
-    FOREIGN KEY (session_id) REFERENCES attendance_sessions(id) ON DELETE CASCADE,
-    FOREIGN KEY (student_id) REFERENCES users(id) ON DELETE CASCADE,
-    FOREIGN KEY (marked_by) REFERENCES users(id),
-    UNIQUE KEY unique_student_session (session_id, student_id),
-    INDEX idx_session (session_id),
-    INDEX idx_student (student_id),
-    INDEX idx_status (status),
-    INDEX idx_date (created_at)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+## 🗄 Database Schema
+
+### Tables Structure
+
+#### `students`
+- `id` (Primary Key)
+- `name`, `roll_no`, `email`, `password`
+- `department`, `created_at`
+
+#### `faculty`
+- `id` (Primary Key)
+- `name`, `email`, `password`
+- `department`, `created_at`
+
+#### `subjects`
+- `id` (Primary Key)
+- `subject_name`, `subject_code`
+- `faculty_id` (Foreign Key)
+- `department`, `created_at`
+
+#### `attendance`
+- `id` (Primary Key)
+- `student_id`, `subject_id` (Foreign Keys)
+- `date`, `status` (P/A)
+- `marked_by`, `created_at`
+
+## 🔧 Installation Guide
+
+### Prerequisites
+- Web server (Apache/Nginx)
+- PHP 7.4 or higher
+- MySQL 5.7 or higher
+- Modern web browser
+
+### Step-by-Step Installation
+
+1. **Clone/Download the project**
+   ```bash
+   git clone https://github.com/shahdhairyah/Attendance-system.git
+   cd Attendance-system
+   ```
+
+2. **Setup Web Server**
+   ```bash
+   # Place all files in your web server directory
+   # e.g., /var/www/html/ or htdocs/
+   ```
+
+3. **Database Setup**
+   ```sql
+   # Import the database schema
+   mysql -u username -p < database.sql
+   ```
+
+4. **Configure Database Connection**
+   ```php
+   // Edit config.php with your database credentials
+   $servername = "localhost";
+   $username = "your_username";
+   $password = "your_password";
+   $dbname = "attendance_system";
+   ```
+
+5. **Access the Application**
+   ```
+   http://localhost/your-project-folder/
+   ```
+
+## 📁 Project Structure
+
+```
+Digital-Attendance-System/
+├── index.php                 # Homepage
+├── config.php               # Database configuration
+├── database.sql             # Database schema
+├── login_faculty.php        # Faculty login page
+├── login_student.php        # Student login page
+├── faculty_dashboard.php    # Faculty main dashboard
+├── student_dashboard.php    # Student main dashboard
+├── attendance_submit.php    # Attendance processing
+├── logout.php              # Session management
+├── assets/
+│   ├── css/                # Custom stylesheets
+│   ├── js/                 # JavaScript files
+│   └── images/             # Image assets
+└── README.md               # Project documentation
 ```
 
-#### Advanced Analytics Views
+## 💻 Usage Examples
+
+### Attendance Calculation
+The system automatically calculates attendance percentages using:
+
 ```sql
--- Attendance Summary View
-CREATE VIEW attendance_summary AS
 SELECT 
-    sp.user_id,
-    sp.student_id,
-    c.id as class_id,
-    s.name as subject_name,
-    COUNT(ar.id) as total_sessions,
-    SUM(CASE WHEN ar.status IN ('present', 'late') THEN 1 ELSE 0 END) as present_count,
-    SUM(CASE WHEN ar.status = 'absent' THEN 1 ELSE 0 END) as absent_count,
-    ROUND((SUM(CASE WHEN ar.status IN ('present', 'late') THEN 1 ELSE 0 END) / COUNT(ar.id)) * 100, 2) as attendance_percentage
-FROM student_profiles sp
-JOIN class_enrollments ce ON sp.user_id = ce.student_id
-JOIN classes c ON ce.class_id = c.id
-JOIN subjects s ON c.subject_id = s.id
-JOIN attendance_sessions ats ON c.id = ats.class_id
-LEFT JOIN attendance_records ar ON ats.id = ar.session_id AND sp.user_id = ar.student_id
-WHERE ce.is_active = TRUE
-GROUP BY sp.user_id, c.id;
+    (COUNT(CASE WHEN status = 'P' THEN 1 END) * 100.0 / COUNT(*)) as percentage
+FROM attendance 
+WHERE student_id = ? AND subject_id = ?
 ```
+
+### Low Attendance Alerts
+Automatic notifications when attendance falls below 75%:
+- Visual warnings on student dashboard
+- Color-coded progress indicators
+- Summary statistics highlighting low attendance subjects
+
+## 🔒 Security Features
+
+- **Session Management**: Secure login/logout functionality
+- **Role-based Access**: Different permissions for faculty and students
+- **SQL Injection Prevention**: Prepared statements for database queries
+- **Input Validation**: Server-side validation for all forms
+- **Password Security**: Hashed password storage (ready for implementation)
+
+## 🚀 Future Enhancements
+
+### Planned Features
+- [ ] **Email Notifications**: Automated alerts for low attendance
+- [ ] **SMS Integration**: Real-time SMS alerts to students and parents
+- [ ] **Advanced Reporting**: Export features with multiple formats (PDF, Excel, CSV)
+- [ ] **Mobile Application**: Native Android/iOS apps
+- [ ] **API Integration**: RESTful APIs for third-party integrations
+- [ ] **Biometric Integration**: Fingerprint/face recognition attendance
+- [ ] **Parent Portal**: Parent access to monitor student attendance
+- [ ] **Multi-language Support**: Localization for different languages
+- [ ] **Advanced Analytics**: Machine learning for attendance prediction
+- [ ] **Blockchain Integration**: Immutable attendance records
+
+### Technical Improvements
+- [ ] **Password Hashing**: Implement bcrypt for secure password storage
+- [ ] **Two-Factor Authentication**: Enhanced security with 2FA
+- [ ] **Database Optimization**: Query optimization and indexing
+- [ ] **Caching System**: Redis/Memcached for better performance
+- [ ] **Error Logging**: Comprehensive error tracking and logging
+- [ ] **Unit Testing**: Automated testing framework implementation
+- [ ] **CI/CD Pipeline**: Automated deployment and testing
+- [ ] **Docker Support**: Containerization for easy deployment
+
+### UI/UX Enhancements
+- [ ] **Dark Mode**: Theme switching capability
+- [ ] **Progressive Web App**: PWA features for mobile experience
+- [ ] **Real-time Notifications**: WebSocket integration for live updates
+- [ ] **Advanced Charts**: Interactive charts and visualizations
+- [ ] **Accessibility**: WCAG compliance for better accessibility
+
+## 🤝 Contributing
+
+We welcome contributions from the community! Here's how you can help:
+
+1. **Fork the repository**
+2. **Create a feature branch**
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+3. **Make your changes**
+4. **Test thoroughly**
+5. **Commit your changes**
+   ```bash
+   git commit -m 'Add some amazing feature'
+   ```
+6. **Push to the branch**
+   ```bash
+   git push origin feature/amazing-feature
+   ```
+7. **Submit a Pull Request**
+
+### Development Guidelines
+- Follow PSR-12 coding standards for PHP
+- Use meaningful commit messages
+- Add comments for complex logic
+- Test your changes before submitting
+- Update documentation as needed
+
+## 📄 License
+
+This project is created for educational purposes and is free to use and modify under the MIT License.
+
+## 📧 Support & Contact
+
+For technical support or questions:
+- **Issues**: [GitHub Issues](https://github.com/shahdhairyah/Attendance-system/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/shahdhairyah/Attendance-system/discussions)
+- **Documentation**: Check this README and code comments
+- **Demo**: Use the provided demo credentials for testing
+
+## 🎯 Project Goals
+
+This project aims to:
+- **Digitize** traditional attendance systems in diploma colleges
+- **Reduce** manual errors and administrative workload
+- **Provide** real-time access to attendance data
+- **Enhance** student engagement through transparency
+- **Enable** data-driven decisions for educational institutions
 
 ---
 
-## 🚀 Installation Guide
+**Developed for Diploma Colleges** - Bridging the gap between traditional and digital attendance management
 
-### 📋 Prerequisites
-
-#### System Requirements
-- **Operating System:** Linux (Ubuntu 20.04+), Windows 10+, macOS 10.15+
-- **Web Server:** Apache 2.4+ or Nginx 1.18+
-- **PHP:** 8.0 or higher with extensions:
-  - mysqli, pdo_mysql, json, mbstring, openssl, curl, gd, zip
-- **Database:** MySQL 8.0+ or MariaDB 10.5+
-- **Memory:** Minimum 2GB RAM (4GB recommended)
-- **Storage:** 10GB free space minimum
-
-#### Development Tools
-- **Git:** Version control
-- **Composer:** PHP dependency manager
-- **Node.js:** For asset compilation (optional)
-- **Docker:** For containerized deployment (optional)
-
-### 🔧 Quick Installation
-
-#### Method 1: Manual Installation
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/shahdhairyah/Attendance-system.git
-cd Attendance-system
-
-# 2. Install PHP dependencies
-composer install --optimize-autoloader --no-dev
-
-# 3. Set up environment configuration
-cp .env.example .env
-nano .env
-
-# 4. Generate application key
-php artisan key:generate
-
-# 5. Set up database
-mysql -u root -p
-CREATE DATABASE attendance_system CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-exit
-
-# 6. Run database migrations
-php artisan migrate
-php artisan db:seed
-
-# 7. Set permissions
-chmod -R 755 storage/
-chmod -R 755 bootstrap/cache/
-chown -R www-data:www-data storage/
-chown -R www-data:www-data bootstrap/cache/
-
-# 8. Configure web server
-sudo nano /etc/apache2/sites-available/attendance.conf
-sudo a2ensite attendance.conf
-sudo systemctl reload apache2
-```
-
-#### Method 2: Docker Installation
-
-```bash
-# 1. Clone repository
-git clone https://github.com/shahdhairyah/Attendance-system.git
-cd Attendance-system
-
-# 2. Build and run containers
-docker-compose up -d --build
-
-# 3. Run initial setup
-docker-compose exec app php artisan migrate
-docker-compose exec app php artisan db:seed
-
-# 4. Access application
-# http://localhost:8080
-```
-
-#### Method 3: One-Click Deployment
-
-```bash
-# Automated installation script
-curl -fsSL https://get.attendance-system.com | bash
-```
-
-### ⚙️ Environment Configuration
-
-#### Database Configuration (.env)
-```env
-# Database Settings
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=attendance_system
-DB_USERNAME=your_username
-DB_PASSWORD=your_secure_password
-
-# Application Settings
-APP_NAME="Attendance Management System"
-APP_ENV=production
-APP_KEY=base64:your_generated_key
-APP_DEBUG=false
-APP_URL=https://your-domain.com
-
-# Mail Configuration
-MAIL_MAILER=smtp
-MAIL_HOST=smtp.gmail.com
-MAIL_PORT=587
-MAIL_USERNAME=your_email@gmail.com
-MAIL_PASSWORD=your_app_password
-MAIL_ENCRYPTION=tls
-
-# Cache Configuration
-CACHE_DRIVER=redis
-SESSION_DRIVER=redis
-QUEUE_CONNECTION=redis
-
-# Redis Configuration
-REDIS_HOST=127.0.0.1
-REDIS_PASSWORD=null
-REDIS_PORT=6379
-
-# Security Settings
-SESSION_LIFETIME=120
-SESSION_SECURE_COOKIE=true
-SESSION_HTTP_ONLY=true
-SANCTUM_STATEFUL_DOMAINS=your-domain.com
-```
-
-### 🌐 Web Server Configuration
-
-#### Apache Virtual Host
-```apache
-<VirtualHost *:80>
-    ServerName attendance.yourdomain.com
-    DocumentRoot /var/www/html/attendance-system/public
-    
-    <Directory /var/www/html/attendance-system/public>
-        AllowOverride All
-        Require all granted
-    </Directory>
-    
-    ErrorLog ${APACHE_LOG_DIR}/attendance_error.log
-    CustomLog ${APACHE_LOG_DIR}/attendance_access.log combined
-</VirtualHost>
-
-<VirtualHost *:443>
-    ServerName attendance.yourdomain.com
-    DocumentRoot /var/www/html/attendance-system/public
-    
-    SSLEngine on
-    SSLCertificateFile /path/to/certificate.crt
-    SSLCertificateKeyFile /path/to/private.key
-    
-    <Directory /var/www/html/attendance-system/public>
-        AllowOverride All
-        Require all granted
-    </Directory>
-</VirtualHost>
-```
-
-#### Nginx Configuration
-```nginx
-server {
-    listen 80;
-    server_name attendance.yourdomain.com;
-    root /var/www/html/attendance-system/public;
-    index index.php index.html;
-
-    location / {
-        try_files $uri $uri/ /index.php?$query_string;
-    }
-
-    location ~ \.php$ {
-        fastcgi_pass unix:/var/run/php/php8.2-fpm.sock;
-        fastcgi_index index.php;
-        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
-        include fastcgi_params;
-    }
-
-    location ~ /\.(?!well-known).* {
-        deny all;
-    }
-}
-```
-
----
-
-## 🔐 Security Features
-
-### 🛡️ Authentication & Authorization
-
-#### Multi-Factor Authentication
-- **SMS-based OTP** - Text message verification
-- **Email OTP** - Email-based two-factor authentication
-- **TOTP Support** - Google Authenticator compatibility
-- **Backup Codes** - Recovery codes for account access
-
-#### Role-Based Access Control (RBAC)
-```php
-// Permission Matrix
-$permissions = [
-    'admin' => [
-        'users.*', 'institutions.*', 'system.*', 'reports.*'
-    ],
-    'faculty' => [
-        'attendance.mark', 'attendance.view', 'students.view', 'reports.basic'
-    ],
-    'student' => [
-        'attendance.view_own', 'profile.view_own', 'notifications.view_own'
-    ]
-];
-```
-
-### 🔒 Data Protection
-
-#### Encryption Standards
-- **AES-256 Encryption** - Database field encryption
-- **TLS 1.3** - Transport layer security
-- **JWT Tokens** - Secure API authentication
-- **Password Hashing** - bcrypt with salt
-- **SQL Injection Prevention** - Prepared statements
-- **XSS Protection** - Output sanitization
-
-#### Privacy Compliance
-- **GDPR Compliant** - European data protection
-- **FERPA Compliant** - Educational privacy standards
-- **Data Anonymization** - PII protection
-- **Right to be Forgotten** - Data deletion capabilities
-- **Audit Trails** - Complete activity logging
-- **Data Backup Encryption** - Encrypted backups
-
-### 🚨 Security Monitoring
-
-#### Threat Detection
-- **Brute Force Protection** - Login attempt limiting
-- **IP Whitelisting** - Access control by location
-- **Session Management** - Secure session handling
-- **Real-time Monitoring** - Suspicious activity detection
-- **Automated Alerts** - Security incident notifications
-- **Penetration Testing** - Regular security assessments
-
----
-
-## 📊 API Documentation
-
-### 🔌 RESTful API Endpoints
-
-#### Authentication Endpoints
-```bash
-# Login
-POST /api/auth/login
-Content-Type: application/json
-{
-    "email": "user@example.com",
-    "password": "password",
-    "remember": true
-}
-
-# Response
-{
-    "success": true,
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...",
-    "user": {
-        "id": 1,
-        "name": "John Doe",
-        "email": "user@example.com",
-        "role": "faculty"
-    },
-    "expires_in": 3600
-}
-
-# Logout
-POST /api/auth/logout
-Authorization: Bearer {token}
-```
-
-#### Attendance Management
-```bash
-# Mark Attendance
-POST /api/attendance/mark
-Authorization: Bearer {token}
-Content-Type: application/json
-{
-    "class_id": 123,
-    "session_date": "2024-01-15",
-    "students": [
-        {"student_id": 456, "status": "present"},
-        {"student_id": 789, "status": "absent"}
-    ]
-}
-
-# Get Attendance Summary
-GET /api/attendance/summary/{student_id}
-Authorization: Bearer {token}
-
-# Response
-{
-    "student_id": "CS2021001",
-    "total_subjects": 6,
-    "overall_percentage": 87.5,
-    "subjects": [
-        {
-            "subject_name": "Data Structures",
-            "total_classes": 45,
-            "attended": 42,
-            "percentage": 93.3,
-            "status": "good"
-        }
-    ]
-}
-```
-
-#### Reporting Endpoints
-```bash
-# Generate Report
-POST /api/reports/generate
-Authorization: Bearer {token}
-Content-Type: application/json
-{
-    "report_type": "attendance_summary",
-    "filters": {
-        "start_date": "2024-01-01",
-        "end_date": "2024-01-31",
-        "course_id": 5,
-        "format": "pdf"
-    }
-}
-
-# Get Available Reports
-GET /api/reports/templates
-Authorization: Bearer {token}
-```
-
-### 📱 WebSocket Events
-
-#### Real-time Notifications
-```javascript
-// Connect to WebSocket
-const socket = io('wss://your-domain.com', {
-    auth: {
-        token: 'your-jwt-token'
-    }
-});
-
-// Listen for attendance updates
-socket.on('attendance_marked', (data) => {
-    console.log('Attendance updated:', data);
-    updateDashboard(data);
-});
-
-// Listen for low attendance alerts
-socket.on('low_attendance_alert', (data) => {
-    showNotification(data.message, 'warning');
-});
-```
-
----
-
-## 🎨 UI/UX Design
-
-### 🎨 Design System
-
-#### Color Palette
-```css
-:root {
-    /* Primary Colors */
-    --primary-blue: #1e40af;
-    --primary-blue-light: #3b82f6;
-    --primary-blue-dark: #1e3a8a;
-    
-    /* Secondary Colors */
-    --secondary-green: #059669;
-    --secondary-red: #dc2626;
-    --secondary-yellow: #d97706;
-    
-    /* Neutral Colors */
-    --gray-50: #f9fafb;
-    --gray-100: #f3f4f6;
-    --gray-900: #111827;
-    
-    /* Status Colors */
-    --success: #10b981;
-    --warning: #f59e0b;
-    --error: #ef4444;
-    --info: #3b82f6;
-}
-```
-
-#### Typography Scale
-```css
-/* Typography System */
-.heading-1 { font-size: 2.25rem; font-weight: 700; line-height: 2.5rem; }
-.heading-2 { font-size: 1.875rem; font-weight: 600; line-height: 2.25rem; }
-.heading-3 { font-size: 1.5rem; font-weight: 600; line-height: 2rem; }
-.body-large { font-size: 1.125rem; font-weight: 400; line-height: 1.75rem; }
-.body-regular { font-size: 1rem; font-weight: 400; line-height: 1.5rem; }
-.body-small { font-size: 0.875rem; font-weight: 400; line-height: 1.25
+⭐ **Star this repository if you find it helpful!**
