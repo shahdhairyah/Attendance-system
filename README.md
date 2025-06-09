@@ -83,6 +83,7 @@ flowchart TD
     G --> H[Success: 'Attendance saved!<br/>Present: 28, Absent: 2']
 ```
 
+
 ### Example 3: Admin Generating Reports
 
 **Scenario**: HOD Dr. Gupta generating monthly report
